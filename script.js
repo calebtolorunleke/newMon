@@ -33,25 +33,43 @@
 
 // console.log(sum)
 
-let products = [ {
-    name: 'laptop', price: 1000, inStock: true
-}, {
-    name: 'phone', price: 500, inStock: false
-}, {
-    name: 'Tablet', price: 700, inStock: true
-} ]
+// let products = [ {
+//     name: 'laptop', price: 1000, inStock: true
+// }, {
+//     name: 'phone', price: 500, inStock: false
+// }, {
+//     name: 'Tablet', price: 700, inStock: true
+// } ]
 
-let totalPrice = products.filter(product => product.inStock).reduce((total,product) => total + product.price, 0)
+// let totalPrice = products.filter(product => product.inStock).reduce((total,product) => total + product.price, 0)
 
-console.log(totalPrice)
+// console.log(totalPrice)
 
 
 // let age = 17
 // if(age >= 18){
 //     console.log('you are allowed to enter')
-// }
+// // }
 
-let number = 6
-if (number % 2 == 0){
-    console.log('even number')
-}else{console.log('odd number')}
+// let number = 6
+// if (number % 2 == 0){
+//     console.log('even number')
+// }else{console.log('odd number')}
+
+function checkGrade(){
+    let score = document.getElementById('score').value
+    let grade;
+
+    if (score>=90){
+        grade ='A'
+    }else if(score>=80){
+        grade ='B'
+    }else if(score>=70){
+        grade ='C'
+    }else{
+        grade='F'
+    }
+
+
+document.getElementById('grade').innerText = 'Your Grade: ' + grade;
+}
